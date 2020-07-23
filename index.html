@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+<!---   <style>
+        * {
+           box-sizing: border-box;
+        }
+        h1 {
+           text-align: center;
+        }
+        .ImgThumbnail {
+           border-radius: 5px;
+           cursor: pointer;
+           transition: 0.3s;
+           height: 250px;
+           width: 250px;
+        }
+        .ImgThumbnail:nth-of-type(1) {
+           margin-left: 20%;
+        }
+        .modal {
+           display: none;
+           position: fixed;
+           z-index: 1;
+           padding-top: 100px;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           overflow: auto;
+           background-color: rgb(0, 0, 0);
+           background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modalImage {
+           margin: auto;
+           display: block;
+           width: 50%;
+           height: 60%;
+           max-width: 700px;
+        }
+        #caption {
+           margin: auto;
+           display: block;
+           width: 80%;
+           max-width: 700px;
+           text-align: center;
+           color: #ccc;
+           padding: 10px 0;
+           height: 150px;
+        }
+        .close {
+           position: absolute;
+           top: 15px;
+           right: 35px;
+           color: #f1f1f1;
+           font-size: 40px;
+           font-weight: bold;
+           transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+           color: rgb(255, 0, 0);
+           cursor: pointer;
+        }
+        @media only screen and (max-width: 700px) {
+           .modalImage {
+              width: 100%;
+           }
+        }
+        </style>-->
+   
+   <!---<script src="app.js"></script>-->
+   <!-- <script>
+        alert("hello world:");
+    </script>-->
+</head>
+<body>
+    <!-- chapter 17 to 20-->
+
+<!-- QUESTION 4
+<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table." onclick='printTable()'/>
+	
+		<p id="pPrint"></p>
+-->
+ <!---   <h1<Image Modal Gallery Example</h1<
+<img class="ImgThumbnail" src="1.jpg"/>
+<img class="ImgThumbnail" src="2.jpg"/>
+<img class="ImgThumbnail" src="download (1).jpg"/>
+<div class="modal">
+<span class="close>×</span>
+<img class="modalImage" id="img01" />
+</div>-->
+<!--<div> <h1> DOM </h1> <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type=”text” id=”first-name”/> <label for=”last-name”>Last Name</label> <input type=”text” id=”last-name”/> <label for=”email”>Email</label> <input type=”text” id=”email”/> </div><div id=”main-content” class=”content”> <p class=”render”> First Name : Alex</p><p class=”render” id=”lastName”>Last Name: Bank</p><p class=”render”> Email : alexbank@example.com</p><p class=”render”> Country : Pakistan </p><p class=”render”> contact : +92 300 1234567</p></div></div>
+   <!--- <img src="download (1).jpg" alt="image">
+    <p>A mobile phone (also known as a hand phone, cell phone, or cellular telephone[1]) is a small portable radio telephone.
+
+        <span id="dots">...</span><span id="more"> It works by communicating with a nearby base station (also called a "cell site") which connects it to the main phone network. When moving, if the mobile phone gets too far away from the cell it is connected to, that cell sends a message to another cell to tell the new cell to take over the call. This is called a "hand off," and the call continues with the new cell the phone is connected to. The hand-off is done so well and carefully for urban areas with many people.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>-->
+
+        <!---   <input type=button value="increment" onclick="button1()" />
+  <input type=button value="decrement" onclick="button2()" />
+  <span id="output-area"></span>-->
+<!--- <form name="form1">
+    <p><b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+    </p>
+    <p><b>Address:</b> <input TYPE="TEXT" SIZE="30" NAME="address">
+    
+    </p>
+    <p><b>Phone: </b> <input TYPE="TEXT" SIZE="15" NAME="phone">
+    </p>
+    <p><input TYPE="BUTTON" VALUE="submit" onClick="submit();"></p>
+    </form>-->
+   <!---   <img border="0" src="download.jpg" id="img" width="260" height="260"
+             onmouseover="mouseOver()" onmouseout="mouseOut()" /></a>-->
+
+    <!---<table border="2px">
+        <tr>
+            <th>S.No</th>
+
+            <th>NAME</th>
+            <th>MARKS</th>
+            <th>DELETE</th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>izba</td>
+            <td>50</td>
+        <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+    </tr>
+        <tr>
+            <td>2</td>
+            <td>iz</td>
+            <td>60</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>iza</td>
+            <td>90</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+         <td><input type="button" value="Edit Row"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>izna</td>
+            <td>80</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>mona</td>
+            <td>60</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>irum</td>
+            <td>60</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>iz</td>
+            <td>60</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>iz</td>
+            <td>60</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        <td><input type="button" value="Edit Row"></td>
+        </tr>
+     </table>-->
+
+ <!--- <a href="javascript:Alert();">click me</a>-->
+  <!---  <img src="download.jpg" onclick="message()">
+    <img src="download (1).jpg" onclick="message()">
+    <img src="download (2).jpg" onclick="message()">-->
+   <!--- <script>
+        alert("hello world:");
+    </script>-->
+  <!---  <script>
+        document.write("yah! i can write HTML content through javaScript");
+
+    </script>-->
+   <!--- <h1> rules for naming js variable</h1>
+    <script>
+        document.write(" Variable names can only contain number $ and _ For example $my_1stVariable"+"<br>");  
+        document.write("Variables must begin with a letter, or $ For example $name, _name or name" +"<br>");
+        document.write("Variable names are case are case sensitive" +"<br>");
+        document.write(" Variable names should not be JS keyword");
+    </script>-->
+   <!---Input Year: <input type="text" id = "year"/> 
+      
+    <input type="button" id="button" onClick="isLeapYear()"
+            value="Check Leap Year"> 
+      
+    <p id="GFG"></p>-->
+    <!---<div> <h1> DOM </h1> <div id=”form-content” class=”content”> <label for=”first-name”>First Name</label> <input type=”text” id=”first-name”/> <label for=”last-name”>Last Name</label> <input type=”text” id=”last-name”/> <label for=”email”>Email</label> <input type=”text” id=”email”/> </div><div id=”main-content” class=”content”> <p class=”render”> First Name : Alex</p><p class=”render” id=”lastName”>Last Name: Bank</p><p class=”render”> Email : alexbank@example.com</p><p class=”render”> Country : Pakistan </p><p class=”render”> contact : +92 300 1234567</p></div></div>
+</body>
+<!--<script>
+    alert("hello world:");
+</script>-->
+<!--<script>
+    var birthYear="my birthday year is 1997";
+document.write(birthYear);
+    </script>-->
+</html>
